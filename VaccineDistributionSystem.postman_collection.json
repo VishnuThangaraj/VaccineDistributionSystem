@@ -1,0 +1,802 @@
+{
+	"info": {
+		"_postman_id": "d605e155-989d-455a-91fe-008c5d63cb8a",
+		"name": "VaccineDistributionSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31243996"
+	},
+	"item": [
+		{
+			"name": "Register Vaccination Center",
+			"item": [
+				{
+					"name": "Vaccination Center 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"KMCH\",\r\n    \"type\" : \"private\",\r\n    \"address\" : \"Coimbatore\",\r\n    \"covaxinCount\" : 100,\r\n    \"covishieldCount\" : 120,\r\n    \"sputnikCount\" : 86,\r\n    \"patientCount\" : 0,\r\n    \"doctorCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/vaccination-center/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"vaccination-center",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccination Center 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Richmond\",\r\n    \"type\" : \"private\",\r\n    \"address\" : \"Tiruppur\",\r\n    \"covaxinCount\" : 98,\r\n    \"covishieldCount\" : 65,\r\n    \"sputnikCount\" : 101,\r\n    \"patientCount\" : 0,\r\n    \"doctorCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/vaccination-center/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"vaccination-center",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccination Center 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"ARS\",\r\n    \"type\" : \"private\",\r\n    \"address\" : \"Sulur\",\r\n    \"covaxinCount\" : 69,\r\n    \"covishieldCount\" : 80,\r\n    \"sputnikCount\" : 47,\r\n    \"patientCount\" : 0,\r\n    \"doctorCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/vaccination-center/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"vaccination-center",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccination Center 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"KGH\",\r\n    \"type\" : \"Government\",\r\n    \"address\" : \"Chennai\",\r\n    \"covaxinCount\" : 88,\r\n    \"covishieldCount\" : 126,\r\n    \"sputnikCount\" : 56,\r\n    \"patientCount\" : 0,\r\n    \"doctorCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/vaccination-center/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"vaccination-center",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccination Center 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Karur GH\",\r\n    \"type\" : \"Government\",\r\n    \"address\" : \"Karur\",\r\n    \"covaxinCount\" : 70,\r\n    \"covishieldCount\" : 56,\r\n    \"sputnikCount\" : 187,\r\n    \"patientCount\" : 0,\r\n    \"doctorCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/vaccination-center/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"vaccination-center",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccination Center 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Madurai GH\",\r\n    \"type\" : \"Government\",\r\n    \"address\" : \"Madurai\",\r\n    \"covaxinCount\" : 198,\r\n    \"covishieldCount\" : 44,\r\n    \"sputnikCount\" : 53,\r\n    \"patientCount\" : 0,\r\n    \"doctorCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/vaccination-center/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"vaccination-center",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register Doctor",
+			"item": [
+				{
+					"name": "Doctor 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"vishnu\",\r\n    \"docDegree\" : \"Mbbs\",\r\n    \"patientCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/doctor/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"doctor",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Doctor 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"vignesh\",\r\n    \"docDegree\" : \"dmp\",\r\n    \"patientCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/doctor/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"doctor",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Doctor 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Kiruba\",\r\n    \"docDegree\" : \"dms\",\r\n    \"patientCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/doctor/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"doctor",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Doctor 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Parama\",\r\n    \"docDegree\" : \"Bsc\",\r\n    \"patientCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/doctor/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"doctor",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Doctor 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Siva\",\r\n    \"docDegree\" : \"Msc\",\r\n    \"patientCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/doctor/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"doctor",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Doctor 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"subash\",\r\n    \"docDegree\" : \"bca\",\r\n    \"patientCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/doctor/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"doctor",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Doctor 7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"prakash\",\r\n    \"docDegree\" : \"mbbs\",\r\n    \"patientCount\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/doctor/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"doctor",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient Signup",
+			"item": [
+				{
+					"name": "Patient 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"john\",\r\n    \"email\" : \"john@email.com\",\r\n    \"password\" : \"john@123\",\r\n    \"aadharNumber\" : \"98765431\",\r\n    \"phoneNumber\" : 555896546,\r\n    \"gender\" : \"male\",\r\n    \"vaccinationPreference\" : \"Private\",\r\n    \"address\" : \"1, j street\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patient 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"mark\",\r\n    \"email\" : \"mark@email.com\",\r\n    \"password\" : \"mark@123\",\r\n    \"aadharNumber\" : \"98765432\",\r\n    \"phoneNumber\" : 555896545,\r\n    \"gender\" : \"male\",\r\n    \"vaccinationPreference\" : \"Private\",\r\n    \"address\" : \"2, m street\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patient 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"antony\",\r\n    \"email\" : \"antony@email.com\",\r\n    \"password\" : \"antony@123\",\r\n    \"aadharNumber\" : \"98765433\",\r\n    \"phoneNumber\" : 555896548,\r\n    \"gender\" : \"male\",\r\n    \"vaccinationPreference\" : \"Private\",\r\n    \"address\" : \"3, aa street\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patient 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"andrea\",\r\n    \"email\" : \"andrea@email.com\",\r\n    \"password\" : \"andrea@123\",\r\n    \"aadharNumber\" : \"98762493\",\r\n    \"phoneNumber\" : 555896649,\r\n    \"gender\" : \"female\",\r\n    \"vaccinationPreference\" : \"Government\",\r\n    \"address\" : \"4, ana street\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patient 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"kareena\",\r\n    \"email\" : \"kareena@email.com\",\r\n    \"password\" : \"kareena@123\",\r\n    \"aadharNumber\" : \"98765544\",\r\n    \"phoneNumber\" : 555296650,\r\n    \"gender\" : \"female\",\r\n    \"vaccinationPreference\" : \"Government\",\r\n    \"address\" : \"4, ka street\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patient 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"samantha\",\r\n    \"email\" : \"samantha@email.com\",\r\n    \"password\" : \"samantha@123\",\r\n    \"aadharNumber\" : \"98761144\",\r\n    \"phoneNumber\" : 981296651,\r\n    \"gender\" : \"female\",\r\n    \"vaccinationPreference\" : \"Government\",\r\n    \"address\" : \"5, saam street\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient Login",
+			"item": [
+				{
+					"name": "Valid Request 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"john@email.com\",\r\n    \"password\" : \"john@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Valid Request 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"samantha@email.com\",\r\n    \"password\" : \"samantha@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unregistered Patient 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"arjun@email.com\",\r\n    \"password\" : \"arjun@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unregistered Patient 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"vijay@email.com\",\r\n    \"password\" : \"vijay@vijay\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wrong Password 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"samantha@email.com\",\r\n    \"password\" : \"smamam@456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wrong Password 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"mark@email.com\",\r\n    \"password\" : \"mark@456v\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Create Appointment",
+			"item": [
+				{
+					"name": "Appointment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/patient/create-appointment?email=vishnuthangaraj.al@gmail.com&vaccinationPreference=Sputnik",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"patient",
+								"create-appointment"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "vishnuthangaraj.al@gmail.com"
+								},
+								{
+									"key": "vaccinationPreference",
+									"value": "Sputnik"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
