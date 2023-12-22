@@ -1,6 +1,6 @@
 # Vaccine Distribution System API
 
-This is a Spring Boot API for a vaccine distribution system. The system aims to manage the distribution of vaccines to different locations efficiently.
+This is a Spring Boot API for a vaccine distribution system. The system aims to create vaccination appointment efficiently and provides email notifications.
 
 ## Table of Contents
 
