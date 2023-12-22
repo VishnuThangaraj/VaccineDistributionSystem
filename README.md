@@ -62,6 +62,7 @@ Run the tests using:
 
 ``` bash
 mvn test
+```
 
 ## Contributing
 Contributions are welcome! Please follow the Development section for the contribution process.
