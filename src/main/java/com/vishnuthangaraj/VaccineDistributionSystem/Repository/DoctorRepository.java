@@ -26,6 +26,6 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
     // Insert patient into doctor vs patient table
     @Modifying
     @Transactional
-    @Query(value = "insert into doctor_patient (doctor_id, patient_id) values (:doctorId, :patientId)", nativeQuery = true)
+    @Query(value = "insert into doctor_patients (doctor_id, patients_id) values (:doctorId, :patientId)", nativeQuery = true)
     public void addPatientVsDoctor(UUID patientId, UUID doctorId);
 }

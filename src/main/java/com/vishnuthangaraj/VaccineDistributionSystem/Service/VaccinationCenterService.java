@@ -36,7 +36,7 @@ public class VaccinationCenterService {
 
     // Get the list of vaccination centers with the Given preference
     public List<VaccinationCenter> getVaccinationCenterOnPreference
-        (String vaccinationCenterPreference, String vaccinationPreference){
+        (String vaccinationPreference, String vaccinationCenterPreference){
         if(vaccinationPreference.equals("Sputnik")){
             return vaccinationCenterRepository.getAllVaccinationCenterOnTypeAndSputnikCount(vaccinationCenterPreference);
         }

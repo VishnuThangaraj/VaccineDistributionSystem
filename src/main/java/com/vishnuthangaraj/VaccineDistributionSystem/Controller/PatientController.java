@@ -4,7 +4,7 @@ import com.vishnuthangaraj.VaccineDistributionSystem.DTO.Request.PatientLoginDTO
 import com.vishnuthangaraj.VaccineDistributionSystem.DTO.Request.PatientSignupDTO;
 import com.vishnuthangaraj.VaccineDistributionSystem.DTO.Response.AppointmentDTO;
 import com.vishnuthangaraj.VaccineDistributionSystem.DTO.Response.GeneralMessageDTO;
-import com.vishnuthangaraj.VaccineDistributionSystem.Enums.VaccinationCenterPrefrence;
+import com.vishnuthangaraj.VaccineDistributionSystem.Enums.VaccinationPreference;
 import com.vishnuthangaraj.VaccineDistributionSystem.Exceptions.PatientDoesNotExistException;
 import com.vishnuthangaraj.VaccineDistributionSystem.Exceptions.WrongCredentials;
 import com.vishnuthangaraj.VaccineDistributionSystem.Models.Patient;
@@ -22,6 +22,7 @@ public class PatientController {
     private PatientService patientService;
 
     // Add new Patient to the Database
+    // http://localhost:8081/patient/signup
     @PostMapping("/signup")
     public ResponseEntity<Patient> signUp(@RequestBody PatientSignupDTO patientSignupDTO){
         Patient patient = patientService.signUp(patientSignupDTO);
@@ -29,6 +30,7 @@ public class PatientController {
     }
 
     // LogIn Existing Patient with DTO(email, password)
+    // http://localhost:8081/patient/login
     @PostMapping("/login")
     public ResponseEntity logIn(@RequestBody PatientLoginDTO patientLoginDTO){
         try{
@@ -44,10 +46,11 @@ public class PatientController {
     }
 
     // Create an Appointment
+    // http://localhost:8081/patient/create-appointment?email=vishnuthangaraj.al@gmail.com&vaccinationPreference=Sputnik
     @GetMapping("/create-appointment")
     public ResponseEntity<AppointmentDTO> createAppointment
-    (@RequestParam String email, @RequestParam VaccinationCenterPrefrence vaccinationCenterPreference){
-        AppointmentDTO appointment = patientService.createAppointment(email, vaccinationCenterPreference.toString());
+    (@RequestParam String email, @RequestParam VaccinationPreference vaccinationPreference){
+        AppointmentDTO appointment = patientService.createAppointment(email, vaccinationPreference.toString());
         return new ResponseEntity<>(appointment, HttpStatus.OK);
     }
 }

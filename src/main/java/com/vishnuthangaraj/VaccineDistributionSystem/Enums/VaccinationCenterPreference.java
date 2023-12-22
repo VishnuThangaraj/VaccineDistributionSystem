@@ -1,5 +1,5 @@
 package com.vishnuthangaraj.VaccineDistributionSystem.Enums;
 
-public enum VaccinationCenterPrefrence {
+public enum VaccinationCenterPreference {
     Government, Private
 }

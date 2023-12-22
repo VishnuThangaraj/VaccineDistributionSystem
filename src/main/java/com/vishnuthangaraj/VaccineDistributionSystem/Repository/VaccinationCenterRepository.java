@@ -24,11 +24,11 @@ public interface VaccinationCenterRepository extends JpaRepository<VaccinationCe
     public void increaseDoctorCountByOne(UUID id, int doctorCount);
 
     // Get all Vaccination Center with Sputnik Count > 0 and Preferred Type
-    @Query(value = "select * from vaccination_center where type=:type and sputnik_count != 0 and patient_count = (select min(patient_count) from vaccination_center where type=:type and sputnik_count != 0", nativeQuery = true)
+    @Query(value = "select * from vaccination_center where type=:type and sputnik_count != 0 and patient_count = (select min(patient_count) from vaccination_center where type=:type and sputnik_count != 0)", nativeQuery = true)
     public List<VaccinationCenter> getAllVaccinationCenterOnTypeAndSputnikCount(String type);
 
     // Get all Vaccination Center with Covishield Count > 0 and Preferred Type
-    @Query(value = "select * from vaccination_center where type=:type and covishield_count != 0 and patient_count = (select min(patient_count) from vaccination_center where type=:type and covishield_count != 0", nativeQuery = true)
+    @Query(value = "select * from vaccination_center where type=:type and covishield_count != 0 and patient_count = (select min(patient_count) from vaccination_center where type=:type and covishield_count != 0)", nativeQuery = true)
     public List<VaccinationCenter> getAllVaccinationCenterOnTypeAndCovishieldCount(String type);
 
     // Get all Vaccination Center with Covaxin Count > 0 and Preferred Type

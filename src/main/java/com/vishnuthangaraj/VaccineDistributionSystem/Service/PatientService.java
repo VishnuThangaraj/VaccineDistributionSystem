@@ -46,23 +46,24 @@ public class PatientService {
     }
 
     // LogIn Existing Patient with DTO(email, password)
+    // http://localhost:8081/patient/login
     public Patient logIn(PatientLoginDTO patientLoginDTO){
         Patient patient = patientRepository.getPatientByEmail(patientLoginDTO.getEmail());
         if(patient == null){
             throw new PatientDoesNotExistException("Patient email Id is not registered in the Database.");
         }
-        if(patient.getPassword().equals(patientLoginDTO.getPassword())){
+        if(!patient.getPassword().equals(patientLoginDTO.getPassword())){
             throw new WrongCredentials("Patient Entered Wrong Password.");
         }
         return patient;
     }
 
     // Create an Appointment for the Patient and return Appointment DTO
-    public AppointmentDTO createAppointment(String email, String vaccinationCenterPreference){
+    public AppointmentDTO createAppointment(String email, String vaccinationPreference){
         Patient patient = patientRepository.getPatientByEmail(email); // Get Patient by Email
         // Get the list of vaccination centers with the Given preference
         List<VaccinationCenter> vaccinationCenterList = vaccinationCenterService.
-                getVaccinationCenterOnPreference(vaccinationCenterPreference, patient.getVaccinationPreference());
+                getVaccinationCenterOnPreference(vaccinationPreference, patient.getVaccinationPreference());
         // Assign 0th Index Vaccination Center to the Patient
         VaccinationCenter patientPreference = vaccinationCenterList.get(0);
 

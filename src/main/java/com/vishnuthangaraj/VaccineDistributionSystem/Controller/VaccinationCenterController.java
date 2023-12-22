@@ -18,6 +18,7 @@ public class VaccinationCenterController {
     private VaccinationCenterService vaccinationCenterService;
 
     // Add new Vaccination Center to Database
+    // http://localhost:8081/register
     @PostMapping("/register")
     public ResponseEntity<VaccinationCenter> register(@RequestBody VaccinationCenter vaccinationCenterObj){
         VaccinationCenter vaccinationCenter =

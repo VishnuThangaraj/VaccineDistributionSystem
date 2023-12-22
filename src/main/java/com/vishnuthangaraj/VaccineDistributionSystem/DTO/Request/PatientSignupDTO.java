@@ -1,6 +1,6 @@
 package com.vishnuthangaraj.VaccineDistributionSystem.DTO.Request;
 
-import com.vishnuthangaraj.VaccineDistributionSystem.Enums.VaccinationCenterPrefrence;
+import com.vishnuthangaraj.VaccineDistributionSystem.Enums.VaccinationCenterPreference;
 import lombok.*;
 
 @NoArgsConstructor
@@ -16,7 +16,7 @@ public class PatientSignupDTO {
     private String aadharNumber;
     private long phoneNumber;
     private String gender;
-    private VaccinationCenterPrefrence vaccinationPreference;
+    private VaccinationCenterPreference vaccinationPreference;
     private String address;
 
 }
